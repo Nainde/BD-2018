@@ -1,0 +1,21 @@
+create database lancamentos_db;
+use lancamentos_db;
+
+create table pessoas(id bigint primary key auto_increment, nome varchar(50) not null, ativo tinyint(1) not null)
+engine=InnoDB charset=utf8;
+create table contatos(id bigint primary key auto_increment,nome varchar(50) not null, email varchar(255) not null unique, 
+telefone varchar(14) not null, pessoa_id bigint not null, foreign key(pessoa_id) references pessoas(id))engine=InnoDB charset=utf8; 
+alter table contatos add constraint fk_pessoa_id foreign key(pessoa_id) references pessoas(id) ON DELETE CASCADE;
+create table estados(sigla varchar(2) primary key not null, nome varchar (100) not null unique) egine=InnoDB default charset=utf8;
+create table cidades(id bigint primary key auto_increment, nome varchar(255) not null unique, estado_sigla varchar(2), 
+foreign key (estado_sigla) references estados(sigla))engine=InnoDB default charset=utf;
+alter table cidades add constraint fk_estado_sigla foreign key(estado_sigla) references estados(sigla);
+create table enderecos(pessoa_id bigint primary key, logradouro varchar(10) not null, numero varchar (10) not null, bairro varchar (100) not null, cep varchar(20) not null, pessoa_id bigint primary key not null, cidade_id bigint  not null, foreign key (pessoa_id) references pessoas(id),
+foreign key (cidade_id) references cidades(id))engine=InnoDB charset=utf8;
+alter table enderecos add constraint fk_pessoa_id foreign key(pessoa_id) references pessoas(id) ON DELETE CASCADE;
+create table categoria(id bigint primary key auto_increment, descricao varchar(100) not null)engine=InnoDB charset=utf8;
+create table lancamentos(id bigint primary key auto_increment, descricao varchar(255) not null, dt_vencimento date not null, dt_pagamento date, 
+valor decimal(10,2) unsigned not null, observacao varchar(255), tipo enum('receita','despesa') not null, pessoa_id bigint, categoria_id bigint constraint fk_pessoa_id foreign key (pessoa_id) references pessoas(id), foreign key (categoria_id) references categorias(id))
+engine=InnoDB charset=utf8;
+alter table lancamentos add constraint fk_lancamentos_pessoas foreign key (pessoa_id) references pessoas(id) ON DELETE CASCADE;
+
