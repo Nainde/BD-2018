@@ -1,0 +1,135 @@
+ insert into pessoas (nome, ativo) values ('Joaquim Pereira', true);
+ insert into pessoas (nome, ativo) values ('Pedro Costa', false);
+insert into pessoas (nome, ativo) values ('Beatriz Silva', true);
+ insert into pessoas (nome, ativo) values ('Edneuza Rosa', true);
+ insert into pessoas (nome, ativo) values ('Antonio Augusto', true);
+
+
+ insert into contatos ( nome, email,telefone, pessoa_id) values ('Joaquim Pereira', ‘joaquimp@gmail.com','55555555','1');
+ insert into contatos ( nome, email,telefone, pessoa_id) values ('Pedro Costa', 'costapedro@gmail.com','77777777','2’');
+ insert into contatos ( nome, email,telefone, pessoa_id) values ('Beatriz Silva', 'biasilvaa@gmail.com','66666666','3');
+ insert into contatos ( nome, email,telefone, pessoa_id) values ('Edneuza Rosa', 'edbdo@gmail.com','88888888','4');
+ insert into contatos ( nome, email,telefone, pessoa_id) values ('Antonio Augusto', 'augustoantonio@gmail.com','33333333','5');
+
+
+insert into estado (sigla,nome) values ('BA', 'Bahia');
+insert into estado (sigla,nome) values ('MG', 'Minas Gerais');
+insert into estado (sigla,nome) values  ('SP', 'Sãpo Paulo');
+ insert into estado (sigla,nome) values ('PR', 'Parana');
+  insert into estado (sigla,nome) values ('RS', 'Rio Grande do Sul');
+  
+  
+insert into cidades (id,nome, estado_sigla) values ('Brumado', 'BA');
+ insert into cidades (id,nome, estado_sigla) values  (‘Ouro Preto', 'MG');
+ insert into cidades (id,nome, estado_sigla) values ('Osasco' , 'SP');
+ insert into cidades (id,nome, estado_sigla) values ('Maringa', 'PR');
+insert into cidades (id,nome, estado_sigla) values (‘Pato Branco','RS');
+
+ insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (1, 'Rua A', '227' ,'Flores','46100',1);
+ insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (2, ‘Rua B', '111' ,'Candeias','45000',2);
+ insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (3, 'Rua C', '555' ,'Ibirapuera','44444',3);
+ insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (4, ‘Rua D', '349' ,'Rio Sul','66666',3);
+  insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (5, 'Rua E','567','Brasil','41000',5);
+ 
+ 
+ 
+  insert into categorias (descricao) values (' receita');
+   insert into categorias (descricao) values (' despesa');
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-01-05’, ‘2018-01-04’, ‘300’,’Pagamentos janeiro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-01-20’, ‘2018-01-19’, ‘70’,’Pagamentos janeiro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-01-20’, ‘2018-01-19’, ‘90’,’Pagamentos janeiro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-01-20’, ‘2018-01-19’, ‘120’,’Pagamentos janeiro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-01-01’, ‘2018-01-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-02-01’, ‘2018-02-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-02-20’, ‘2018-02-20’, ‘70’,’Pagamentos fevereiro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-02-20’, ‘2018-02-20', ‘100’,’Pagamentos fevereiro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-02-28’, ‘2018-02-28’, ‘95’,’Pagamentos fevereiro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-02-05’, ‘2018-02-04’, ‘300’,’Pagamentos fevereiro’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-03-01’, ‘2018-03-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-03-20’, ‘2018-03-20’, ‘65’,’Pagamentos março’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-03-20’, ‘2018-03-20', ‘100’,’Pagamentos março’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-03-30’, ‘2018-03-30’, ‘50’,’Pagamentos março’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-03-05’, ‘2018-03-04’, ‘300’,’Pagamentos março’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-04-01’, ‘2018-04-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-04-20’, ‘2018-04-20’, ‘70’,’Pagamentos abril’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-04-20’, ‘2018-04-20', ‘100’,’Pagamentos abril’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-04-30’, ‘2018-04-30’, ‘80’,’Pagamentos abril’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-04-05’, ‘2018-04-04’, ‘300’,’Pagamentos abril, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-05-01’, ‘2018-05-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-05-20’, ‘2018-05-20’, ‘30’,’Pagamentos maio’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-05-20’, ‘2018-05-20', ‘80’,’Pagamentos maio’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-05-30’, ‘2018-05-30’, ‘78’,’Pagamentos maio’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-05-05’, ‘2018-05-04’, ‘300’,’Pagamentos maio’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-06-01’, ‘2018-06-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-06-20’, ‘2018-06-20’, ‘50’,’Pagamentos junho’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-06-20’, ‘2018-06-20', ‘150’,’Pagamentos junho’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-06-30’, ‘2018-06-30’, ‘100’,’Pagamentos junho’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-06-05’, ‘2018-06-04’, ‘300’,’Pagamentos junho’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-07-01’, ‘2018-07-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-07-20’, ‘2018-07-20’, ‘45’,’Pagamentos julho’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-07-20’, ‘2018-07-20', ‘90’,’Pagamentos julho’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-07-30’, ‘2018-07-30’, ‘60’,’Pagamentos julho’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-07-05’, ‘2018-07-04’, ‘300’,’Pagamentos julho’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-08-01’, ‘2018-08-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-08-20’, ‘2018-08-20’, ‘30’,’Pagamentos agosto’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-08-20’, ‘2018-08-20', ‘77’,’Pagamentos agosto’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-08-30’, ‘2018-08-30’, ‘42’,’Pagamentos agosto’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-08-05’, ‘2018-08-04’, ‘300’,’Pagamentos agosto’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-09-01’, ‘2018-09-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-09-20’, ‘2018-09-20’, ‘38’,’Pagamentos setembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-09-20’, ‘2018-09-20', ‘100’,’Pagamentos setembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-09-30’, ‘2018-09-30’, ‘30’,’Pagamentos setembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-09-05’, ‘2018-09-04’, ‘300’,’Pagamentos setembro’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-10-01’, ‘2018-10-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-10-20’, ‘2018-10-20’, ‘49’,’Pagamentos outubro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-10-20’, ‘2018-10-20', ‘250’,’Pagamentos outubro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-10-30’, ‘2018-10-30’, ‘50’,’Pagamentos outubro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-10-05’, ‘2018-10-04’, ‘300’,’Pagamentos outubro’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-11-01’, ‘2018-11-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-11-20’, ‘2018-11-20’, ‘55’,’Pagamentos novembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-11-20’, ‘2018-11-20', ‘167’,’Pagamentos novembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-11-30’, ‘2018-11-30’, ‘80’,’Pagamentos novembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-11-05’, ‘2018-11-04’, ‘300’,’Pagamentos novembro’, ‘despesa’, ‘1’,’2’);
+
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-12-01’, ‘2018-12-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-12-20’, ‘2018-12-20’, ‘40’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-12-20’, ‘2018-12-20', ‘100’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-12-30’, ‘2018-12-30’, ‘64’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-12-05’, ‘2018-12-04’, ‘300’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
