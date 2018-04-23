@@ -107,6 +107,7 @@ insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observ
 insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-12-20’, ‘2018-12-20', ‘100’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
 insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-12-30’, ‘2018-12-30’, ‘64’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
 insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-12-05’, ‘2018-12-04’, ‘300’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
+
 update pessoas set cpf='5555' where id=1;
 update pessoas set cpf='6666' where id=2;
 update pessoas set cpf='7777' where id=3;
