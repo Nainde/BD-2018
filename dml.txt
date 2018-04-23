@@ -5,8 +5,8 @@ insert into pessoas (nome, ativo) values ('Beatriz Silva', true);
  insert into pessoas (nome, ativo) values ('Antonio Augusto', true);
 
 
- insert into contatos ( nome, email,telefone, pessoa_id) values ('Joaquim Pereira', ‘joaquimp@gmail.com','55555555','1');
- insert into contatos ( nome, email,telefone, pessoa_id) values ('Pedro Costa', 'costapedro@gmail.com','77777777','2’');
+ insert into contatos ( nome, email,telefone, pessoa_id) values ('Joaquim Pereira', â€˜joaquimp@gmail.com','55555555','1');
+ insert into contatos ( nome, email,telefone, pessoa_id) values ('Pedro Costa', 'costapedro@gmail.com','77777777','2â€™');
  insert into contatos ( nome, email,telefone, pessoa_id) values ('Beatriz Silva', 'biasilvaa@gmail.com','66666666','3');
  insert into contatos ( nome, email,telefone, pessoa_id) values ('Edneuza Rosa', 'edbdo@gmail.com','88888888','4');
  insert into contatos ( nome, email,telefone, pessoa_id) values ('Antonio Augusto', 'augustoantonio@gmail.com','33333333','5');
@@ -14,21 +14,21 @@ insert into pessoas (nome, ativo) values ('Beatriz Silva', true);
 
 insert into estado (sigla,nome) values ('BA', 'Bahia');
 insert into estado (sigla,nome) values ('MG', 'Minas Gerais');
-insert into estado (sigla,nome) values  ('SP', 'Sãpo Paulo');
+insert into estado (sigla,nome) values  ('SP', 'SÃ£po Paulo');
  insert into estado (sigla,nome) values ('PR', 'Parana');
   insert into estado (sigla,nome) values ('RS', 'Rio Grande do Sul');
   
   
 insert into cidades (id,nome, estado_sigla) values ('Brumado', 'BA');
- insert into cidades (id,nome, estado_sigla) values  (‘Ouro Preto', 'MG');
+ insert into cidades (id,nome, estado_sigla) values  (â€˜Ouro Preto', 'MG');
  insert into cidades (id,nome, estado_sigla) values ('Osasco' , 'SP');
  insert into cidades (id,nome, estado_sigla) values ('Maringa', 'PR');
-insert into cidades (id,nome, estado_sigla) values (‘Pato Branco','RS');
+insert into cidades (id,nome, estado_sigla) values (â€˜Pato Branco','RS');
 
  insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (1, 'Rua A', '227' ,'Flores','46100',1);
- insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (2, ‘Rua B', '111' ,'Candeias','45000',2);
+ insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (2, â€˜Rua B', '111' ,'Candeias','45000',2);
  insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (3, 'Rua C', '555' ,'Ibirapuera','44444',3);
- insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (4, ‘Rua D', '349' ,'Rio Sul','66666',3);
+ insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (4, â€˜Rua D', '349' ,'Rio Sul','66666',3);
   insert into enderecos (pessoas_id, logradouro,numero, bairro, cep,cidade_id) values (5, 'Rua E','567','Brasil','41000',5);
  
  
@@ -36,77 +36,97 @@ insert into cidades (id,nome, estado_sigla) values (‘Pato Branco','RS');
   insert into categorias (descricao) values (' receita');
    insert into categorias (descricao) values (' despesa');
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-01-05’, ‘2018-01-04’, ‘300’,’Pagamentos janeiro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-01-20’, ‘2018-01-19’, ‘70’,’Pagamentos janeiro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-01-20’, ‘2018-01-19’, ‘90’,’Pagamentos janeiro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-01-20’, ‘2018-01-19’, ‘120’,’Pagamentos janeiro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-01-01’, ‘2018-01-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-01-05â€™, â€˜2018-01-04â€™, â€˜300â€™,â€™Pagamentos janeiroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-01-20â€™, â€˜2018-01-19â€™, â€˜70â€™,â€™Pagamentos janeiroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-01-20â€™, â€˜2018-01-19â€™, â€˜90â€™,â€™Pagamentos janeiroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-01-20â€™, â€˜2018-01-19â€™, â€˜120â€™,â€™Pagamentos janeiroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-01-01â€™, â€˜2018-01-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-02-01’, ‘2018-02-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-02-20’, ‘2018-02-20’, ‘70’,’Pagamentos fevereiro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-02-20’, ‘2018-02-20', ‘100’,’Pagamentos fevereiro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-02-28’, ‘2018-02-28’, ‘95’,’Pagamentos fevereiro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-02-05’, ‘2018-02-04’, ‘300’,’Pagamentos fevereiro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-02-01â€™, â€˜2018-02-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-02-20â€™, â€˜2018-02-20â€™, â€˜70â€™,â€™Pagamentos fevereiroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-02-20â€™, â€˜2018-02-20', â€˜100â€™,â€™Pagamentos fevereiroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-02-28â€™, â€˜2018-02-28â€™, â€˜95â€™,â€™Pagamentos fevereiroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-02-05â€™, â€˜2018-02-04â€™, â€˜300â€™,â€™Pagamentos fevereiroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-03-01’, ‘2018-03-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-03-20’, ‘2018-03-20’, ‘65’,’Pagamentos março’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-03-20’, ‘2018-03-20', ‘100’,’Pagamentos março’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-03-30’, ‘2018-03-30’, ‘50’,’Pagamentos março’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-03-05’, ‘2018-03-04’, ‘300’,’Pagamentos março’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-03-01â€™, â€˜2018-03-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-03-20â€™, â€˜2018-03-20â€™, â€˜65â€™,â€™Pagamentos marÃ§oâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-03-20â€™, â€˜2018-03-20', â€˜100â€™,â€™Pagamentos marÃ§oâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-03-30â€™, â€˜2018-03-30â€™, â€˜50â€™,â€™Pagamentos marÃ§oâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-03-05â€™, â€˜2018-03-04â€™, â€˜300â€™,â€™Pagamentos marÃ§oâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-04-01’, ‘2018-04-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-04-20’, ‘2018-04-20’, ‘70’,’Pagamentos abril’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-04-20’, ‘2018-04-20', ‘100’,’Pagamentos abril’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-04-30’, ‘2018-04-30’, ‘80’,’Pagamentos abril’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-04-05’, ‘2018-04-04’, ‘300’,’Pagamentos abril, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-04-01â€™, â€˜2018-04-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-04-20â€™, â€˜2018-04-20â€™, â€˜70â€™,â€™Pagamentos abrilâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-04-20â€™, â€˜2018-04-20', â€˜100â€™,â€™Pagamentos abrilâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-04-30â€™, â€˜2018-04-30â€™, â€˜80â€™,â€™Pagamentos abrilâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-04-05â€™, â€˜2018-04-04â€™, â€˜300â€™,â€™Pagamentos abril, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-05-01’, ‘2018-05-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-05-20’, ‘2018-05-20’, ‘30’,’Pagamentos maio’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-05-20’, ‘2018-05-20', ‘80’,’Pagamentos maio’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-05-30’, ‘2018-05-30’, ‘78’,’Pagamentos maio’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-05-05’, ‘2018-05-04’, ‘300’,’Pagamentos maio’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-05-01â€™, â€˜2018-05-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-05-20â€™, â€˜2018-05-20â€™, â€˜30â€™,â€™Pagamentos maioâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-05-20â€™, â€˜2018-05-20', â€˜80â€™,â€™Pagamentos maioâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-05-30â€™, â€˜2018-05-30â€™, â€˜78â€™,â€™Pagamentos maioâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-05-05â€™, â€˜2018-05-04â€™, â€˜300â€™,â€™Pagamentos maioâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-06-01’, ‘2018-06-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-06-20’, ‘2018-06-20’, ‘50’,’Pagamentos junho’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-06-20’, ‘2018-06-20', ‘150’,’Pagamentos junho’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-06-30’, ‘2018-06-30’, ‘100’,’Pagamentos junho’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-06-05’, ‘2018-06-04’, ‘300’,’Pagamentos junho’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-06-01â€™, â€˜2018-06-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-06-20â€™, â€˜2018-06-20â€™, â€˜50â€™,â€™Pagamentos junhoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-06-20â€™, â€˜2018-06-20', â€˜150â€™,â€™Pagamentos junhoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-06-30â€™, â€˜2018-06-30â€™, â€˜100â€™,â€™Pagamentos junhoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-06-05â€™, â€˜2018-06-04â€™, â€˜300â€™,â€™Pagamentos junhoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-07-01’, ‘2018-07-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-07-20’, ‘2018-07-20’, ‘45’,’Pagamentos julho’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-07-20’, ‘2018-07-20', ‘90’,’Pagamentos julho’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-07-30’, ‘2018-07-30’, ‘60’,’Pagamentos julho’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-07-05’, ‘2018-07-04’, ‘300’,’Pagamentos julho’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-07-01â€™, â€˜2018-07-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-07-20â€™, â€˜2018-07-20â€™, â€˜45â€™,â€™Pagamentos julhoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-07-20â€™, â€˜2018-07-20', â€˜90â€™,â€™Pagamentos julhoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-07-30â€™, â€˜2018-07-30â€™, â€˜60â€™,â€™Pagamentos julhoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-07-05â€™, â€˜2018-07-04â€™, â€˜300â€™,â€™Pagamentos julhoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-08-01’, ‘2018-08-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-08-20’, ‘2018-08-20’, ‘30’,’Pagamentos agosto’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-08-20’, ‘2018-08-20', ‘77’,’Pagamentos agosto’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-08-30’, ‘2018-08-30’, ‘42’,’Pagamentos agosto’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-08-05’, ‘2018-08-04’, ‘300’,’Pagamentos agosto’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-08-01â€™, â€˜2018-08-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-08-20â€™, â€˜2018-08-20â€™, â€˜30â€™,â€™Pagamentos agostoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-08-20â€™, â€˜2018-08-20', â€˜77â€™,â€™Pagamentos agostoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-08-30â€™, â€˜2018-08-30â€™, â€˜42â€™,â€™Pagamentos agostoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-08-05â€™, â€˜2018-08-04â€™, â€˜300â€™,â€™Pagamentos agostoâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-09-01’, ‘2018-09-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-09-20’, ‘2018-09-20’, ‘38’,’Pagamentos setembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-09-20’, ‘2018-09-20', ‘100’,’Pagamentos setembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-09-30’, ‘2018-09-30’, ‘30’,’Pagamentos setembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-09-05’, ‘2018-09-04’, ‘300’,’Pagamentos setembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-09-01â€™, â€˜2018-09-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-09-20â€™, â€˜2018-09-20â€™, â€˜38â€™,â€™Pagamentos setembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-09-20â€™, â€˜2018-09-20', â€˜100â€™,â€™Pagamentos setembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-09-30â€™, â€˜2018-09-30â€™, â€˜30â€™,â€™Pagamentos setembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-09-05â€™, â€˜2018-09-04â€™, â€˜300â€™,â€™Pagamentos setembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-10-01’, ‘2018-10-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-10-20’, ‘2018-10-20’, ‘49’,’Pagamentos outubro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-10-20’, ‘2018-10-20', ‘250’,’Pagamentos outubro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-10-30’, ‘2018-10-30’, ‘50’,’Pagamentos outubro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-10-05’, ‘2018-10-04’, ‘300’,’Pagamentos outubro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-10-01â€™, â€˜2018-10-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-10-20â€™, â€˜2018-10-20â€™, â€˜49â€™,â€™Pagamentos outubroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-10-20â€™, â€˜2018-10-20', â€˜250â€™,â€™Pagamentos outubroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-10-30â€™, â€˜2018-10-30â€™, â€˜50â€™,â€™Pagamentos outubroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-10-05â€™, â€˜2018-10-04â€™, â€˜300â€™,â€™Pagamentos outubroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-11-01’, ‘2018-11-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-11-20’, ‘2018-11-20’, ‘55’,’Pagamentos novembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-11-20’, ‘2018-11-20', ‘167’,’Pagamentos novembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-11-30’, ‘2018-11-30’, ‘80’,’Pagamentos novembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-11-05’, ‘2018-11-04’, ‘300’,’Pagamentos novembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-11-01â€™, â€˜2018-11-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-11-20â€™, â€˜2018-11-20â€™, â€˜55â€™,â€™Pagamentos novembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-11-20â€™, â€˜2018-11-20', â€˜167â€™,â€™Pagamentos novembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-11-30â€™, â€˜2018-11-30â€™, â€˜80â€™,â€™Pagamentos novembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-11-05â€™, â€˜2018-11-04â€™, â€˜300â€™,â€™Pagamentos novembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
 
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Salario’, ‘2018-12-01’, ‘2018-12-01’, ‘3000’,’Recebidos’, ‘receita’, ‘1’,’1’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Agua’, ‘2018-12-20’, ‘2018-12-20’, ‘40’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Luz’, ‘2018-12-20’, ‘2018-12-20', ‘100’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Telefone’, ‘2018-12-30’, ‘2018-12-30’, ‘64’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
-insert into lancamentos (descrição, dt_vencimento, dt_pagamento, valor, observação, tipo, pessoa_id, categoria_id) values (‘Seguro carro’, ‘2018-12-05’, ‘2018-12-04’, ‘300’,’Pagamentos dezembro’, ‘despesa’, ‘1’,’2’);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Salarioâ€™, â€˜2018-12-01â€™, â€˜2018-12-01â€™, â€˜3000â€™,â€™Recebidosâ€™, â€˜receitaâ€™, â€˜1â€™,â€™1â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Aguaâ€™, â€˜2018-12-20â€™, â€˜2018-12-20â€™, â€˜40â€™,â€™Pagamentos dezembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Luzâ€™, â€˜2018-12-20â€™, â€˜2018-12-20', â€˜100â€™,â€™Pagamentos dezembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Telefoneâ€™, â€˜2018-12-30â€™, â€˜2018-12-30â€™, â€˜64â€™,â€™Pagamentos dezembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+insert into lancamentos (descriÃ§Ã£o, dt_vencimento, dt_pagamento, valor, observaÃ§Ã£o, tipo, pessoa_id, categoria_id) values (â€˜Seguro carroâ€™, â€˜2018-12-05â€™, â€˜2018-12-04â€™, â€˜300â€™,â€™Pagamentos dezembroâ€™, â€˜despesaâ€™, â€˜1â€™,â€™2â€™);
+update pessoas set cpf='5555' where id=1;
+update pessoas set cpf='6666' where id=2;
+update pessoas set cpf='7777' where id=3;
+update pessoas set cpf='8888' where id=4;
+update pessoas set cpf='9999' where id=5;
+update contatos set pessoa_cpf='5555' where id=1;
+update contatos set pessoa_cpf='6666' where id=2;
+update contatos set pessoa_cpf='7777' where id=3;
+update contatos set pessoa_cpf='8888' where id=4;
+update contatos set pessoa_cpf='9999' where id=5;
+update enderecos set pessoa_cpf='5555' where id=1;
+update enderecos set pessoa_cpf='6666' where id=2;
+update enderecos set pessoa_cpf='7777' where id=3;
+update enderecos set pessoa_cpf='8888' where id=4;
+update enderecos set pessoa_cpf='9999' where id=5;
+
+select descricao as 'descriÃ§Ã£o', dt_vencimento as 'DataVencimento', valor as 'Valor (R$)' from lancamentos where pessoa_cpf='5555';
+
+select avg(I.valor) as 'despesas mÃ©dia' from lancamentos I inner join pessoas p on I.pessoa_cpf where pessoa_cpf='5555' and I.dt_vencimento between '2018-02-01' and '2018-02-30' and tipo='despesa';
+
 
 
 
